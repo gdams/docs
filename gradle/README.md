@@ -16,11 +16,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`5.4.1-jdk8`, `5.4-jdk8`, `jdk8`, `5.4.1-jdk`, `5.4-jdk`, `jdk`, `5.4.1`, `5.4`, `latest`](https://github.com/keeganwitt/docker-gradle/blob/7c606d205bcf13551f8203e12174c37004383694/jdk8/Dockerfile)
--	[`5.4.1-jre8`, `5.4-jre8`, `jre8`, `5.4.1-jre`, `5.4-jre`, `jre`](https://github.com/keeganwitt/docker-gradle/blob/7c606d205bcf13551f8203e12174c37004383694/jre8/Dockerfile)
--	[`5.4.1-jdk11`, `5.4-jdk11`, `jdk11`](https://github.com/keeganwitt/docker-gradle/blob/7c606d205bcf13551f8203e12174c37004383694/jdk11/Dockerfile)
--	[`5.4.1-jdk12`, `5.4-jdk12`, `jdk12`](https://github.com/keeganwitt/docker-gradle/blob/7c606d205bcf13551f8203e12174c37004383694/jdk12/Dockerfile)
--	[`5.4.1-jre12`, `5.4-jre12`, `jre12`](https://github.com/keeganwitt/docker-gradle/blob/7c606d205bcf13551f8203e12174c37004383694/jre12/Dockerfile)
+**No supported tags found!**
+
+It is very likely that `gradle` does not support the currently selected architecture (`arm32v5`).
 
 # Quick reference
 
@@ -62,7 +60,7 @@ WARNING:
 
 Run this from the directory of the Gradle project you want to build.
 
-`docker run --rm -u gradle -v "$PWD":/home/gradle/project -w /home/gradle/project gradle gradle <gradle-task>`
+`docker run --rm -u gradle -v "$PWD":/home/gradle/project -w /home/gradle/project arm32v5/gradle gradle <gradle-task>`
 
 Note the above command runs using uid/gid 1000 (user *gradle*) to avoid running as root.
 
