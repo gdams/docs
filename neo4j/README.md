@@ -16,10 +16,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`3.5.6`, `3.5`, `latest`](https://github.com/neo4j/docker-neo4j-publish/blob/af59f1d6a03f87c0f391c3fbdb482ccb0cd65b59/3.5.6/community/Dockerfile)
--	[`3.5.6-enterprise`, `3.5-enterprise`, `enterprise`](https://github.com/neo4j/docker-neo4j-publish/blob/af59f1d6a03f87c0f391c3fbdb482ccb0cd65b59/3.5.6/enterprise/Dockerfile)
--	[`3.4.14`, `3.4`](https://github.com/neo4j/docker-neo4j-publish/blob/0449aa9c6a60c0b1e71b9fe4800c7cde716bdeb5/3.4.14/community/Dockerfile)
--	[`3.4.14-enterprise`, `3.4-enterprise`](https://github.com/neo4j/docker-neo4j-publish/blob/0449aa9c6a60c0b1e71b9fe4800c7cde716bdeb5/3.4.14/enterprise/Dockerfile)
+**No supported tags found!**
+
+It is very likely that `neo4j` does not support the currently selected architecture (`i386`).
 
 # Quick reference
 
@@ -63,7 +62,7 @@ You can start a Neo4j container like this:
 docker run \
     --publish=7474:7474 --publish=7687:7687 \
     --volume=$HOME/neo4j/data:/data \
-    neo4j
+    i386/neo4j
 ```
 
 which allows you to access neo4j through your browser at [http://localhost:7474](http://localhost:7474).

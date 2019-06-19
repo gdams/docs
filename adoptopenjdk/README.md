@@ -16,18 +16,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`8u212-b04-jdk-hotspot`, `8-jdk-hotspot`, `8-hotspot`](https://github.com/AdoptOpenJDK/openjdk-docker/blob/02e23cd61cc3e013c160a564b4ac0e4d18d94a0b/8/jdk/ubuntu/Dockerfile.hotspot.releases.full)
--	[`8u212-b04-jre-hotspot`, `8-jre-hotspot`](https://github.com/AdoptOpenJDK/openjdk-docker/blob/02e23cd61cc3e013c160a564b4ac0e4d18d94a0b/8/jre/ubuntu/Dockerfile.hotspot.releases.full)
--	[`11.0.3_7-jdk-hotspot`, `11-jdk-hotspot`, `11-hotspot`](https://github.com/AdoptOpenJDK/openjdk-docker/blob/ba8e2ff59253f16c76878d032a846199d58f453e/11/jdk/ubuntu/Dockerfile.hotspot.releases.full)
--	[`11.0.3_7-jre-hotspot`, `11-jre-hotspot`](https://github.com/AdoptOpenJDK/openjdk-docker/blob/ba8e2ff59253f16c76878d032a846199d58f453e/11/jre/ubuntu/Dockerfile.hotspot.releases.full)
--	[`12.0.1_12-jdk-hotspot`, `12-jdk-hotspot`, `12-hotspot`, `hotspot`, `latest`](https://github.com/AdoptOpenJDK/openjdk-docker/blob/ba8e2ff59253f16c76878d032a846199d58f453e/12/jdk/ubuntu/Dockerfile.hotspot.releases.full)
--	[`12.0.1_12-jre-hotspot`, `12-jre-hotspot`](https://github.com/AdoptOpenJDK/openjdk-docker/blob/ba8e2ff59253f16c76878d032a846199d58f453e/12/jre/ubuntu/Dockerfile.hotspot.releases.full)
--	[`8u212-b04-jdk-openj9-0.14.2`, `8-jdk-openj9`, `8-openj9`](https://github.com/AdoptOpenJDK/openjdk-docker/blob/ce22bbca376d54aaf4b3bce8997b7272adab118b/8/jdk/ubuntu/Dockerfile.openj9.releases.full)
--	[`8u212-b04-jre-openj9-0.14.2`, `8-jre-openj9`](https://github.com/AdoptOpenJDK/openjdk-docker/blob/ce22bbca376d54aaf4b3bce8997b7272adab118b/8/jre/ubuntu/Dockerfile.openj9.releases.full)
--	[`11.0.3_7-jdk-openj9-0.14.3`, `11-jdk-openj9`, `11-openj9`](https://github.com/AdoptOpenJDK/openjdk-docker/blob/ce22bbca376d54aaf4b3bce8997b7272adab118b/11/jdk/ubuntu/Dockerfile.openj9.releases.full)
--	[`11.0.3_7-jre-openj9-0.14.3`, `11-jre-openj9`](https://github.com/AdoptOpenJDK/openjdk-docker/blob/ce22bbca376d54aaf4b3bce8997b7272adab118b/11/jre/ubuntu/Dockerfile.openj9.releases.full)
--	[`12.0.1_12-jdk-openj9-0.14.1`, `12-jdk-openj9`, `12-openj9`, `openj9`](https://github.com/AdoptOpenJDK/openjdk-docker/blob/ce22bbca376d54aaf4b3bce8997b7272adab118b/12/jdk/ubuntu/Dockerfile.openj9.releases.full)
--	[`12.0.1_12-jre-openj9-0.14.1`, `12-jre-openj9`](https://github.com/AdoptOpenJDK/openjdk-docker/blob/ce22bbca376d54aaf4b3bce8997b7272adab118b/12/jre/ubuntu/Dockerfile.openj9.releases.full)
+**No supported tags found!**
+
+It is very likely that `adoptopenjdk` does not support the currently selected architecture (`i386`).
 
 # Quick reference
 
@@ -89,7 +80,7 @@ Docker Images for the following architectures are now available:
 To run a pre-built jar file with the latest OpenJDK 11 with HotSpot JRE image, use the following Dockerfile:
 
 ```dockerfile
-FROM adoptopenjdk:11-jre-hotspot
+FROM i386/adoptopenjdk:11-jre-hotspot
 RUN mkdir /opt/app
 COPY japp.jar /opt/app
 CMD ["java", "-jar", "/opt/app/japp.jar"]
@@ -98,7 +89,7 @@ CMD ["java", "-jar", "/opt/app/japp.jar"]
 To do the same with the latest OpenJDK 11 with Eclipse OpenJ9 JRE image, use the following Dockerfile:
 
 ```dockerfile
-FROM adoptopenjdk:11-jre-openj9
+FROM i386/adoptopenjdk:11-jre-openj9
 RUN mkdir /opt/app
 COPY japp.jar /opt/app
 CMD ["java", "-jar", "/opt/app/japp.jar"]
@@ -114,7 +105,7 @@ docker run -it --rm japp
 If you want to place the jar file on the host file system instead of inside the container, you can mount the host path onto the container by using the following commands:
 
 ```dockerfile
-FROM adoptopenjdk:12.0.1_12-jdk-openj9-0.14.1
+FROM i386/adoptopenjdk:12.0.1_12-jdk-openj9-0.14.1
 CMD ["java", "-jar", "/opt/app/japp.jar"]
 ```
 
