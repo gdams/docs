@@ -28,9 +28,6 @@ WARNING:
 -	[`disco-curl`, `19.04-curl`](https://github.com/docker-library/buildpack-deps/blob/dad73efaa10245757e58d28742cb7ed35fcd31f2/disco/curl/Dockerfile)
 -	[`disco-scm`, `19.04-scm`](https://github.com/docker-library/buildpack-deps/blob/dad73efaa10245757e58d28742cb7ed35fcd31f2/disco/scm/Dockerfile)
 -	[`disco`, `19.04`](https://github.com/docker-library/buildpack-deps/blob/ff09b5c5288f4643056bd7938268d749e9f8a2db/disco/Dockerfile)
--	[`jessie-curl`, `oldstable-curl`](https://github.com/docker-library/buildpack-deps/blob/b0fc01aa5e3aed6820d8fed6f3301e0542fbeb36/jessie/curl/Dockerfile)
--	[`jessie-scm`, `oldstable-scm`](https://github.com/docker-library/buildpack-deps/blob/1845b3f918f69b4c97912b0d4d68a5658458e84f/jessie/scm/Dockerfile)
--	[`jessie`, `oldstable`](https://github.com/docker-library/buildpack-deps/blob/ff09b5c5288f4643056bd7938268d749e9f8a2db/jessie/Dockerfile)
 -	[`sid-curl`, `unstable-curl`](https://github.com/docker-library/buildpack-deps/blob/b0fc01aa5e3aed6820d8fed6f3301e0542fbeb36/sid/curl/Dockerfile)
 -	[`sid-scm`, `unstable-scm`](https://github.com/docker-library/buildpack-deps/blob/99a1c33fda559272e9322b02a5d778bbd04154e7/sid/scm/Dockerfile)
 -	[`sid`, `unstable`](https://github.com/docker-library/buildpack-deps/blob/ff09b5c5288f4643056bd7938268d749e9f8a2db/sid/Dockerfile)
@@ -40,6 +37,8 @@ WARNING:
 -	[`xenial-curl`, `16.04-curl`](https://github.com/docker-library/buildpack-deps/blob/b0fc01aa5e3aed6820d8fed6f3301e0542fbeb36/xenial/curl/Dockerfile)
 -	[`xenial-scm`, `16.04-scm`](https://github.com/docker-library/buildpack-deps/blob/2da658b9a1b91fa61d63ffad2ea52685cac6c702/xenial/scm/Dockerfile)
 -	[`xenial`, `16.04`](https://github.com/docker-library/buildpack-deps/blob/ff09b5c5288f4643056bd7938268d749e9f8a2db/xenial/Dockerfile)
+
+[![s390x/buildpack-deps build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/s390x/job/buildpack-deps.svg?label=s390x/buildpack-deps%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/s390x/job/buildpack-deps/)
 
 # Quick reference
 
