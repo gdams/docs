@@ -28,6 +28,8 @@ An archive for images of unsupported versions can be found at [`opensuse/archive
 
 -	[`42.3`, `latest`, `leap`](https://github.com/openSUSE/docker-containers-build/blob/0df142c37386f5be35c3355d316d7bc444825e0b/x86_64/Dockerfile)
 
+[![amd64/opensuse build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/amd64/job/opensuse.svg?label=amd64/opensuse%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/amd64/job/opensuse/)
+
 # Quick reference
 
 -	**Where to get help**:  

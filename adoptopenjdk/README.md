@@ -29,6 +29,8 @@ WARNING:
 -	[`12.0.1_12-jdk-openj9-0.14.1`, `12-jdk-openj9`, `12-openj9`, `openj9`](https://github.com/AdoptOpenJDK/openjdk-docker/blob/ce22bbca376d54aaf4b3bce8997b7272adab118b/12/jdk/ubuntu/Dockerfile.openj9.releases.full)
 -	[`12.0.1_12-jre-openj9-0.14.1`, `12-jre-openj9`](https://github.com/AdoptOpenJDK/openjdk-docker/blob/ce22bbca376d54aaf4b3bce8997b7272adab118b/12/jre/ubuntu/Dockerfile.openj9.releases.full)
 
+[![amd64/adoptopenjdk build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/amd64/job/adoptopenjdk.svg?label=amd64/adoptopenjdk%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/amd64/job/adoptopenjdk/)
+
 # Quick reference
 
 -	**Where to get help**:  
@@ -89,7 +91,7 @@ Docker Images for the following architectures are now available:
 To run a pre-built jar file with the latest OpenJDK 11 with HotSpot JRE image, use the following Dockerfile:
 
 ```dockerfile
-FROM adoptopenjdk:11-jre-hotspot
+FROM amd64/adoptopenjdk:11-jre-hotspot
 RUN mkdir /opt/app
 COPY japp.jar /opt/app
 CMD ["java", "-jar", "/opt/app/japp.jar"]
@@ -98,7 +100,7 @@ CMD ["java", "-jar", "/opt/app/japp.jar"]
 To do the same with the latest OpenJDK 11 with Eclipse OpenJ9 JRE image, use the following Dockerfile:
 
 ```dockerfile
-FROM adoptopenjdk:11-jre-openj9
+FROM amd64/adoptopenjdk:11-jre-openj9
 RUN mkdir /opt/app
 COPY japp.jar /opt/app
 CMD ["java", "-jar", "/opt/app/japp.jar"]
@@ -114,7 +116,7 @@ docker run -it --rm japp
 If you want to place the jar file on the host file system instead of inside the container, you can mount the host path onto the container by using the following commands:
 
 ```dockerfile
-FROM adoptopenjdk:12.0.1_12-jdk-openj9-0.14.1
+FROM amd64/adoptopenjdk:12.0.1_12-jdk-openj9-0.14.1
 CMD ["java", "-jar", "/opt/app/japp.jar"]
 ```
 
